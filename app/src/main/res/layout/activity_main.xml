@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/containerSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="@color/backgroundTopColor"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_calculadora_imc"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="70sp">
+            <TextView
+                style="@style/label_form"
+                android:text="@string/label_peso" />
+            <TextView
+                style="@style/label_form"
+                android:text="@string/label_altura" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+            <EditText
+                android:id="@+id/etPeso"
+                style="@style/input_form_number"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="65"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/etAltura"
+                style="@style/input_form_number"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:hint="1.75"
+                android:inputType="number" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button"
+            android:text="@string/label_calcular"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerInferior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="@color/backgroundBottomColor"
+        android:orientation="vertical"
+        android:padding="16dp" >
+        <TextView
+            android:id="@+id/tvIMC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seu_imc"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_below="@id/tvIMC"
+            android:layout_above="@id/tvIMCStatus"
+            android:id="@+id/ivIMCStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/masc_ideal"/>
+
+        <TextView
+            android:id="@+id/tvIMCStatus"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso iIdeal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

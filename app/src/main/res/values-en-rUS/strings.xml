@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="sobre_peso">" You are overweight"</string>
+    <string name="obesidade_grau_iii">You have Grade III Obesity</string>
+    <string name="obesidade_grau_ii">You have Grade II Obesity</string>
+    <string name="seu_imc">Seu IMC é: %1$s.</string>
+    <string name="peso_normal">" Normal weight"</string>
+    <string name="label_peso">Weight (kg)</string>
+    <string name="label_calculadora_imc">IMC Calculator</string>
+    <string name="label_calcular">Calculate</string>
+    <string name="label_altura">height (m)</string>
+    <string name="magreza">Under weight</string>
+    <string name="obesidade_grau_i">You have Grade I Obesity</string>
+</resources>
